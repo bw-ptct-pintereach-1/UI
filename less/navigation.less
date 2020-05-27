@@ -4,40 +4,55 @@
         background-color:@mediumcolor;
         color:@darkcolor;
         .Flexit(space-evenly);
-        
-        #logo{
-            color:@lightcolor;
-            font-size:6rem;
-            font-family:'Bebas Neue', cursive;
-            text-shadow: 1px 1px 2px darken(@lightcolor,50%);
-            letter-spacing: 0rem;
-           
-           
+      #logosection{
+
+            #logo{
+                color:@lightcolor;
+                font-size:6rem;
+                font-family:'Bebas Neue', cursive;
+                text-shadow: 1px 1px 2px darken(@lightcolor,50%);
+                letter-spacing: 0rem;
+                
+                @media @mobile{
+                    margin-left:-10%;
+                    padding-left:5%;
+                }
+            
+            }
+            #slogan{
+                margin-top:-8%;
+                text-align:center;
+                @media @mobile{
+                    margin-left:-10%;
+                }
+                
+            }
         }
         #mainnav{
             .Flexit(space-evenly);
+            @media @mobile{
+                flex-direction:column;
+                text-align:center;
+               
+            }
                 
             a{
                 margin-left:1%;
-                
+                text-decoration:none;
+                color:@darkcolor;
+                padding:2%;
+                margin-top:20%;
+                margin-left:10%;
+                font-size:1.2rem;
+                font-weight:bolder;
+                letter-spacing: -1px;
+           
             }
-            .special{
-                .Buttonit(@darkcolor,@lightcolor);
-            }
+                   a:hover{ color:@accent;
+                    }
+           
         }
+    
     }
-    #container{
-    max-width: 1000px;
-    width: 100%;
-    border:1px solid lightgray;
-    margin: 0 auto;
-    @media @mobile{
-        width:95vw;
-    }
+
     
-    
-  
-       
-    
-       
-}
