@@ -153,6 +153,7 @@ html body a {
 #header #mainnav {
   display: flex;
   justify-content: space-evenly;
+  height: 10%;
 }
 @media (max-width:500px) {
   #header #mainnav {
@@ -163,12 +164,14 @@ html body a {
   margin-left: 1%;
   text-decoration: none;
   color: #756C83;
-  margin-top: 20%;
-  margin-right: 5%;
+  margin-top: 30%;
+  margin-right: 25%;
+  font-size: 1.5rem;
 }
 @media (max-width:500px) {
   #header #mainnav a {
     font-size: 1.5rem;
+    margin: 1% auto;
   }
 }
 #header #mainnav a a:hover {
@@ -272,22 +275,58 @@ html body a {
 #container #contentMain #middlecontent p {
   padding: 5%;
   font-size: 2rem;
+  display: absolute;
 }
 @media (max-width:500px) {
   #container #contentMain #middlecontent p {
     font-size: 1.5rem;
   }
 }
+#container #contentMain #middlecontent p #signup {
+  background-color: #FBFBFB;
+  color: #756C83;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.09rem;
+  border-radius: 5px;
+  border: 1px solid #8f869c;
+  margin-left: 60%;
+  padding: 2%;
+  margin-top: 15%;
+}
 #container #contentMain #bottomcontent {
   padding: 10%;
+  display: flex;
+  justify-content: space-evenly;
   background-color: #FBFBFB;
+}
+@media (max-width:800px) {
+  #container #contentMain #bottomcontent {
+    flex-direction: column;
+  }
+}
+@media (max-width:500px) {
+  #container #contentMain #bottomcontent {
+    flex-direction: column;
+  }
+}
+#container #contentMain #bottomcontent #mobile {
+  height: 30vh;
+}
+@media (max-width:500px) {
+  #container #contentMain #bottomcontent #mobile {
+    width: 80vw;
+    height: 20vh;
+  }
 }
 #container #contentMain #bottomcontent p {
   font-size: 2rem;
+  margin-top: 10%;
+  order: 2;
 }
 @media (max-width:500px) {
   #container #contentMain #bottomcontent p {
     font-size: 1.5rem;
+    text-align: justify;
   }
 }
 footer {
