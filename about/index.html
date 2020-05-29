@@ -6,22 +6,13 @@
     <title>Pintereach | About Us! </title>
     <link rel="stylesheet" type="text/css" href="../css/aboutindex.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Grand+Hotel&family=Lobster&family=Montserrat&family=Oswald:wght@300&display=swap" rel="stylesheet">
-<script>$("#slideshow > div:gt(0)").hide();
-
-    setInterval(function() {
-      $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
-    }, 3000);</script></head>
+</head>
 <body>
 
 
     <section id="header">
         <section id="logosection">
-            <h1 id="logo">Pintereach</h1>
+           <a href="https://pintereachbrittany.netlify.app"><h1 id="logo">Pintereach</h1></a>
             <h6 id="slogan">A go-to spot for your research topics!</h6>
         </section>  
         <nav id="mainnav">
@@ -32,20 +23,38 @@
     </section>
     <div id="container">
     <section id="contentMain">
-
-        <div id="slideshow">
+        <section class="row">
+        <div class="slideshow">
             <div id="lindsay">
               <img id="lindsaypic" src="../images/Lindsay.png" alt="Lindsay - Front-End Developer">
               <p id="lindsayinfo">Lindsay is a Front End Developer on Pintereach. She has created the login and sign up forms.</p>
             </div>
+        </div>
+        <div class="slideshow">
             <div id="michael">
-              <img src="../images/Michael.png" alt="Michael - Back-End Developer">
+              <img src="../images/Michael.png" id="michaelpic" alt="Michael - Back-End Developer">
               <p id="michaelinfo">Michael is a full-stack web developer from Albany, New York. Michael built the back-end server and database for Pintereach.</p>
             </div>
+        </div>
+        </section>
+        <section class="row">
+        <div class="slideshow">
+            <div id="henry">
+              <img src="../images/Henry.jpg" id="henrypic" alt="Henry - Back-End Developer">
+              <p id="henryinfo">Henry is a back-end developer that created the React application for Pintereach.</p>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div id="brittany">
+              <img src="../images/brittany.jpg" id="brittanypic" alt="Brittany - Back-End Developer">
+              <p id="brittanyinfo">Brittany is a full-stack web developer from Charlotte, North Carolina. 
+                  Brittany built the landing and about pages for Pintereach.</p>
+            </div>
+        </div>
             <div>
              
             </div>
-         </div>
+         
         </section>
         
 
