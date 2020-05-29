@@ -1,0 +1,13 @@
+@lightcolor: #FBFBFB;
+@darkcolor: #756C83;
+@accent: #F38181;
+@mediumcolor: #B9E1DC;
+@mobile: ~'(max-width:500px)';
+@tablet: ~'(max-width:800px)';
+@keyframes highlight {
+    0%   {color:@darkcolor;}
+    25%  {color:darken(@accent,60%);}
+    50%  {color:darken(@accent,40%);}
+    75%  {color:darken(@accent,15%);}
+    100% {color:@accent;}
+  }
