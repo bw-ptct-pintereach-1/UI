@@ -153,6 +153,7 @@ html body a {
 #header #mainnav {
   display: flex;
   justify-content: space-evenly;
+  height: 10%;
 }
 @media (max-width:500px) {
   #header #mainnav {
@@ -163,12 +164,14 @@ html body a {
   margin-left: 1%;
   text-decoration: none;
   color: #756C83;
-  margin-top: 20%;
-  margin-right: 5%;
+  margin-top: 30%;
+  margin-right: 25%;
+  font-size: 1.5rem;
 }
 @media (max-width:500px) {
   #header #mainnav a {
     font-size: 1.5rem;
+    margin: 1% auto;
   }
 }
 #header #mainnav a a:hover {

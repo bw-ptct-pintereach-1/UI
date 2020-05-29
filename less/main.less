@@ -83,19 +83,44 @@
             p{
                 padding:5%;
                 font-size:2rem;
+                display:absolute;
                 @media @mobile{
                     font-size:1.5rem;
+                }
+
+                #signup{
+                    .Buttonit(@lightcolor,@darkcolor);
+                    margin-left:60%;
+                    padding:2%;
+                    margin-top:15%;
                 }
             }
         }
         #bottomcontent{
             padding:10%;
+            .Flexit(space-evenly);
             background-color:@lightcolor;
-
+            @media @tablet{
+                flex-direction: column;
+            }
+            @media @mobile{
+                flex-direction: column;
+            }
+            #mobile{
+                height:30vh;
+                @media @mobile{
+                    width:80vw;
+                    height:20vh;
+                }
+            }
             p{
                 font-size:2rem;
+                margin-top:10%;
+                order:2;
+                
                 @media @mobile{
                     font-size:1.5rem;
+                    text-align:justify;
                 }
             }
         }
