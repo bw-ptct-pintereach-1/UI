@@ -8,7 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Grand+Hotel&family=Lobster&family=Montserrat&family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+<script>$("#slideshow > div:gt(0)").hide();
 
+    setInterval(function() {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 3000);</script>
 
     <section id="header">
         <section id="logosection">
@@ -24,12 +33,19 @@
     <div id="container">
     <section id="contentMain">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="slideshow">
+            <div id="lindsay">
+              <img id="lindsaypic" src="../images/Lindsay.png" alt="Lindsay - Front-End Developer">
+              <p id="lindsayinfo">Lindsay is a Front End Developer on Pintereach. She has created the login and sign up forms.</p>
+            </div>
+            <div id="michael">
+              <img src="../images/Michael.png" alt="Michael - Back-End Developer">
+              <p id="michaelinfo">Michael is a full-stack web developer from Albany, New York. Michael built the back-end server and database for Pintereach.</p>
+            </div>
+            <div>
+             
+            </div>
+         </div>
         </section>
         
 
