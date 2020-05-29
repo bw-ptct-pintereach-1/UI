@@ -127,7 +127,8 @@ html body a {
     flex-direction: column;
   }
 }
-#header #logosection #logo {
+#header #logosection a {
+  text-decoration: none;
   color: #FBFBFB;
   font-size: 6rem;
   font-family: 'Bebas Neue', cursive;
@@ -135,7 +136,7 @@ html body a {
   letter-spacing: 0rem;
 }
 @media (max-width:500px) {
-  #header #logosection #logo {
+  #header #logosection a {
     text-align: center;
     padding-bottom: 4%;
   }
@@ -209,8 +210,9 @@ footer {
   background-color: #756C83;
   margin: 0 auto;
   color: #FBFBFB;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: Center;
 }
 @media (max-width:800px) {
   footer {
@@ -221,4 +223,9 @@ footer {
   footer {
     max-width: 100vw;
   }
+}
+footer #bottomNav a {
+  text-decoration: none;
+  color: #FBFBFB;
+  font-size: 1.2rem;
 }
